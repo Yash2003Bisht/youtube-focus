@@ -16,6 +16,24 @@ body.youtube-filter-enabled.on-watch-page .ytp-ce-element {
   cursor: not-allowed;
 }
 
+/* Target end screen suggestions that appear on the video player */
+body.youtube-filter-enabled.on-watch-page .ytp-endscreen-content,
+body.youtube-filter-enabled.on-watch-page .ytp-endscreen-content .ytp-endscreen-thumbnail,
+body.youtube-filter-enabled.on-watch-page .ytp-autonav-endscreen-countdown-container {
+  filter: blur(100px) !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
+/* Also target any interactive elements inside end screens */
+body.youtube-filter-enabled.on-watch-page .ytp-endscreen-content a,
+body.youtube-filter-enabled.on-watch-page .ytp-endscreen-content button,
+body.youtube-filter-enabled.on-watch-page .ytp-autonav-endscreen-countdown-container a,
+body.youtube-filter-enabled.on-watch-page .ytp-autonav-endscreen-countdown-container button {
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
 /* Hide end screen suggestions */
 body.youtube-filter-enabled.on-watch-page .ytp-ce-element {
   filter: blur(100px) !important;
