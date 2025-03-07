@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect x="0" y="0" width="128" height="128" rx="20" fill="#FF0000" />
+  
+  <!-- YouTube play button shape (blurred) -->
+  <path d="M48 32L88 64L48 96Z" fill="white" fill-opacity="0.9" filter="blur(8px)" />
+  
+  <!-- Blur effect overlay -->
+  <rect x="16" y="16" width="96" height="96" rx="16" fill="white" fill-opacity="0.3" />
+  
+  <!-- Focus lines -->
+  <path d="M24 64H104" stroke="white" stroke-width="4" stroke-opacity="0.8" />
+  <path d="M64 24V104" stroke="white" stroke-width="4" stroke-opacity="0.8" />
+</svg>

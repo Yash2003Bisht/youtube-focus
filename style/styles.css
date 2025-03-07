@@ -1,0 +1,82 @@
+body.youtube-filter-enabled.on-watch-page #secondary, 
+body.youtube-filter-enabled.on-watch-page #related,
+body.youtube-filter-enabled.on-watch-page .ytp-ce-element,
+body.youtube-filter-enabled.on-watch-page #secondary a, 
+body.youtube-filter-enabled.on-watch-page #related a,
+body.youtube-filter-enabled.on-watch-page .ytp-ce-element a,
+body.youtube-filter-enabled.on-watch-page #secondary ytd-thumbnail,
+body.youtube-filter-enabled.on-watch-page #related ytd-thumbnail {
+  pointer-events: none !important;
+}
+
+body.youtube-filter-enabled.on-watch-page #secondary, 
+body.youtube-filter-enabled.on-watch-page #related,
+body.youtube-filter-enabled.on-watch-page .ytp-ce-element {
+  filter: blur(100px) !important;
+  cursor: not-allowed;
+}
+
+/* Hide end screen suggestions */
+body.youtube-filter-enabled.on-watch-page .ytp-ce-element {
+  filter: blur(100px) !important;
+  cursor: not-allowed;
+}
+
+/* Styles for toggle button in popup */
+body {
+  width: 200px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
